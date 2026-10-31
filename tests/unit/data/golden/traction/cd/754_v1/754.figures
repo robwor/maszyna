@@ -90,9 +90,9 @@ tractive force peak = 0.0 kN
 [brake]
 duration = 60.00 s
 speed at the start = 142.3 km/h
-speed at the end = 0.1 km/h
+speed at the end = 0.0 km/h
 speed peak = 142.3 km/h
-distance = 1243.8 m
+distance = 1243.7 m
 stopped after = 50.01 s
 brake pipe lowest = 3.400 bar
 brake pipe at the end = 3.400 bar
@@ -101,10 +101,10 @@ motor current peak = 0 A
 tractive force peak = 0.0 kN
 [release]
 duration = 20.00 s
-speed at the start = 0.1 km/h
+speed at the start = 0.0 km/h
 speed at the end = 0.0 km/h
-speed peak = 0.1 km/h
-distance = 0.2 m
+speed peak = 0.0 km/h
+distance = 0.0 m
 brake pipe lowest = 3.400 bar
 brake pipe at the end = 4.996 bar
 brake pipe back at 4.9 bar after = 0.65 s

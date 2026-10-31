@@ -68,9 +68,9 @@ tractive force peak = 8.3 kN
 [brake]
 duration = 60.00 s
 speed at the start = 156.8 km/h
-speed at the end = 0.1 km/h
+speed at the end = 0.0 km/h
 speed peak = 156.8 km/h
-distance = 1306.0 m
+distance = 1305.9 m
 stopped after = 50.71 s
 brake pipe lowest = 3.400 bar
 brake pipe at the end = 3.400 bar

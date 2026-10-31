@@ -69,6 +69,9 @@ TEST_CASE("brakes: service braking stops a heavier wagon too") {
 - `consist` (`consist.h`) couples vehicles into a train and steps them together, coupler forces,
   air, control and power passing between them. The physics reaches a neighbour through its
   `TDynamicObject`, for its `MoverParameters` only; the tests have a stand-in of it with just that.
+- `pair` (`vehicle.h`) puts two vehicles on that track facing each other with the given ends and runs
+  them together, as the simulation runs the vehicles of a scene: the coupler and buffer forces,
+  collisions and automatic coupling come from the physics (`test_couplers.cpp`).
 - `drive.h` has the driver's part, made of the AI's steps: `start_up()` (battery, pumps,
   pantographs, line breaker, converter, compressor), `drive()` (running, acknowledging the
   vigilance), `release_brakes()`, `drive_cycle()` (a whole run from start-up to a stop).

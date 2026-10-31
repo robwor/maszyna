@@ -1,6 +1,7 @@
 #pragma once
 
 #include <array>
+#include <cstddef>
 #include <memory>
 #include <optional>
 #include <stdexcept>
@@ -109,13 +110,6 @@ public:
 	double speed() const { return m_mover->V * 3.6; }
 
 private:
-	friend class pair;
-
-	// the two halves of a step: the forces, taken by all the vehicles in the scene first, then the movement,
-	// the vehicle placed at Location. returns the distance travelled [m], positive forwards
-	void compute_forces(double Dt);
-	double compute_movement(track const &Track, double Dt, TLocation const &Location);
-
 	std::unique_ptr<TMoverParameters> m_mover;
 	int m_cab{0};
 	double m_pipepressure{-1.0};
